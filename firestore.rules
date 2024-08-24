@@ -25,6 +25,6 @@ service cloud.firestore {
 
   function isAdmin() {
     // PLEASE UPDATE ADMIN UID
-  	return request.auth.uid == 'YgRaeJye4kPkQgwqswFNl6iQkdwy';
+  	return request.auth.uid == '3fpMVo66qdgWvKEpQ5x5qFr9iTh1';
   }
 }
