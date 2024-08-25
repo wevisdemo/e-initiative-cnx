@@ -16,8 +16,8 @@ const documentCount =
 ---
 
 <SectionContainer
-	outerClass="min-h-screen justify-center bg-[#03C038]"
-	innerClass="flex flex-col gap-10 text-center"
+	outerClass="h-screen justify-center bg-[#03C038]"
+	innerClass="relative flex flex-col gap-10 text-center"
 	hideNavbar
 >
 	<div
@@ -28,12 +28,12 @@ const documentCount =
 			ร่วมกันปลดล็อคให้เชียงใหม่จัดการตนเองโดยไม่จำเป็นต้องรอรัฐส่วนกลางอีกต่อไป
 		</span>
 	</div>
-	<div class="flex flex-col gap-3">
+	<div class="flex flex-col items-center gap-3">
 		<a href="#sign">
 			<img
 				src="/regist.png"
 				alt="regist"
-				class="h-full w-full cursor-pointer"
+				class="h-[218px] w-[218px] cursor-pointer"
 			/>
 		</a>
 		<div class="flex flex-col">
@@ -56,3 +56,15 @@ const documentCount =
 		</div>
 	</div>
 </SectionContainer>
+<div class="absolute bottom-0 w-full">
+	<div
+		class="absolute bottom-0 left-1/2 h-[82px] w-[calc(100vw-232px)] -translate-x-1/2 transform bg-[#1169A8]"
+	>
+	</div>
+	<img src="/pole-left.png" alt="pole-left" class="absolute bottom-0 left-0" />
+	<img
+		src="/pole-right.png"
+		alt="pole-right"
+		class="absolute bottom-0 right-0"
+	/>
+</div>
