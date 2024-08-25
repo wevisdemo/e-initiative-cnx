@@ -4,51 +4,93 @@ import DocumentIcon from '../icons/DocumentIcon.svelte';
 ---
 
 <SectionContainer
-	innerClass="flex max-w-screen-md flex-col items-center gap-8 text-center"
+	innerClass="flex max-w-screen-md flex-col items-center gap-3 text-center"
+	outerClass="bg-[#1169A8]"
 >
-	<h2 class="heading-responsive-02">ทำไมต้องลงชื่อ</h2>
-
-	<img
-		class="w-[180px] max-w-[280px] md:w-[280px]"
-		src="https://placehold.co/280x280"
-		alt=""
-	/>
-
-	<p>
-		Lorem ipsum dolor sit amet consectetur. Erat leo id neque tristique enim
-		elementum gravida. Ornare ultrices ac in a turpis ut. Lacus sit mollis
-		molestie est aliquet porta cursus. Suscipit gravida vivamus lacus faucibus.
-		Diam leo id proin semper amet consectetur vel. Integer amet dui dui
-		fringilla in nulla venenatis etiam sem. Adipiscing cras mattis interdum nec
-		mi fermentum. Vulputate integer et commodo arcu consectetur. Ultrices
-		pharetra proin posuere sed vulputate tempus aliquam.
-	</p>
-
-	<div class="h-[2px] w-full bg-base-300"></div>
-
-	<h3 class="heading-03">heading</h3>
-
-	<img
-		class="w-[180px] max-w-[280px] md:w-[280px]"
-		src="https://placehold.co/280x280"
-		alt=""
-	/>
-
-	<p>
-		Lorem ipsum dolor sit amet consectetur. Erat leo id neque tristique enim
-		elementum gravida. Ornare ultrices ac in a turpis ut. Lacus sit mollis
-		molestie est aliquet porta cursus. Suscipit gravida vivamus lacus faucibus.
-		Diam leo id proin semper amet consectetur vel. Integer amet dui dui
-		fringilla in nulla venenatis etiam sem. Adipiscing cras mattis interdum nec
-		mi fermentum. Vulputate integer et commodo arcu consectetur. Ultrices
-		pharetra proin posuere sed vulputate tempus aliquam.
-	</p>
-
-	<a
-		href="#"
-		target="_blank"
-		rel="noopener noreferrer"
-		class="btn btn-primary btn-block text-base-100"
-		>อ่านร่าง พรบ. ฉบับเต็ม <DocumentIcon /></a
-	>
+	<img src="chiangmai.png" " alt="Chiang Mai" class="h-[140px] w-[358px]" />
+	<div class="flex w-[660px] flex-col">
+		<div
+			class="heading-responsive-01 flex w-full items-center justify-center rounded-t-lg bg-secondary py-[14px] font-bold text-neutral"
+		>
+			ทำไมต้องลงชื่อ
+		</div>
+		<div
+			class="body-02 flex w-full flex-col items-start justify-center bg-white px-[14px] text-neutral"
+		>
+			<div class="mt-[14px] w-full">มีใจความสำคัญคือ</div>
+			<div
+				class="mt-4 flex w-full items-center justify-center rounded-lg bg-[#FFFAE1] py-3"
+			>
+				ให้มีการเปลี่ยนแปลงการบริหาร <br /> ราชการ จังหวัดเชียงใหม่
+			</div>
+			<div
+				class="mt-2 flex w-full items-center justify-center rounded-lg bg-accent py-3"
+			>
+				ให้มีการกระจายงบประมาณ ภารกิจการ <br /> บริการสาธารณะ ข้าราชการบุคลากร
+				<br /> และอำนาจการบริหารตัดสินใจ <br /> จากส่วนกลางให้จังหวัดเชียงใหม
+			</div>
+			<div
+				class="mt-2 flex w-full items-center justify-center rounded-lg bg-secondary py-3 font-semibold"
+			>
+				<img src="/box.svg" alt="box" class="mr-[10px]" />
+				โดยการเลือกตั้งผู้ว่าราชการ <br />
+				จังหวัดเชียงใหม่มาบริหารงาน
+			</div>
+			<div class="mt-4 flex items-start gap-4">
+				<img src="hands.svg" alg="hands" />
+				<div
+					class="body-02 flex flex-col items-start justify-start gap-1 text-left"
+				>
+					<p>
+						จังหวัดเชียงใหม่เป็นหนึ่งในจังหวัด ที่มีการเรียกร้องการกระจายอำนาจ
+						สู่ท้องถิ่นมาอย่างต่อเนื่อง ด้วยความพร้อมในด้านต่างๆ ไม่ว่าจะเป็น..
+					</p>
+					<div class="flex items-center gap-[6px]">
+						<img src="check-mark.svg" alt="check" />
+						<p>ทรัพยากรธรรมชาติ</p>
+					</div>
+					<div class="flex items-center gap-[6px]">
+						<img src="check-mark.svg" alt="check" />
+						<p>ทรัพยากรทางวัฒนธรรม</p>
+					</div>
+					<div class="flex items-center gap-[6px]">
+						<img src="check-mark.svg" alt="check" />
+						<p>ทรัพยากรคน</p>
+					</div>
+					<p class="font-semibold">
+						จึงเกิดแนวคิดการกระจายอำนาจโดย ประชาชนในจังหวัดเชียงใหม่
+					</p>
+				</div>
+			</div>
+			<div class="mt-4 flex items-start gap-4">
+				<img src="explain.svg" alg="explain" />
+				<div
+					class="body-02 flex flex-col items-start justify-start gap-1 text-left"
+				>
+					<p>
+						โดยในอดีตร่าง พ.ร.บ. ดังกล่าว เคยถูกยื่นให้กับประธานรัฐสภา
+						ผู้แทนราษฎรในปี 2557 แต่ก็ถูก คณะรัฐประหารยึดอำนาจ และ
+						ยุบสภาไปในที่สุด
+					</p>
+					<p class="font-semibold">ทำให้การผลักดันพ.ร.บ.ดังกล่าวถูกปัดตกไป</p>
+				</div>
+			</div>
+			<div class="mb-[14px] mt-4 flex items-start gap-4">
+				<img src="flag.svg" alg="flag" />
+				<div
+					class="body-02 flex flex-col items-start justify-start gap-1 text-left"
+				>
+					<p class="font-semibold text-secondary">
+						ปี 2567 จึงเป็นปีแห่งการเริ่มต้นใหม่
+						ประชาชนชาวเชียงใหม่จึงเสนอร่างกฎหมายนี้
+					</p>
+				</div>
+			</div>
+		</div>
+		<div
+			class="heading-03 flex w-full cursor-pointer items-center justify-center gap-[14px] rounded-b-lg bg-neutral py-[14px] font-bold text-secondary"
+		>
+			อ่านร่าง พรบ. ฉบับเต็ม <DocumentIcon />
+		</div>
+	</div>
 </SectionContainer>
