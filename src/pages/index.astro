@@ -14,14 +14,7 @@ import { isCampaignEnded } from '../utils/campaign';
 	<main class="flex flex-col">
 		<LandingSection />
 		<IntroSection />
-		{
-			!isCampaignEnded && (
-				<>
-					<SignSection />
-					{Config.petition.offline?.volunteer && <VolunteerSection />}
-				</>
-			)
-		}
+		{!isCampaignEnded && <SignSection />}
 		<AboutSection />
 		<!-- <Navbar client:idle /> -->
 	</main>
