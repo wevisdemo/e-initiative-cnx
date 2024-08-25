@@ -11,11 +11,47 @@ import { isCampaignEnded } from '../utils/campaign';
 ---
 
 <Body>
-	<main class="flex flex-col">
-		<LandingSection />
+	<main class="relative flex flex-col">
+		<div class="relative">
+			<LandingSection />
+		</div>
 		<IntroSection />
 		{!isCampaignEnded && <SignSection />}
 		<AboutSection />
-		<!-- <Navbar client:idle /> -->
+		<div class="absolute bottom-0 z-10 w-full">
+			<div
+				class="absolute bottom-0 left-1/2 h-[82px] w-[calc(100vw-232px)] -translate-x-1/2 transform bg-[#1169A8]"
+			>
+			</div>
+			<img
+				src="/pole-left.png"
+				alt="pole-left"
+				class="absolute bottom-0 left-0"
+			/>
+			<img
+				src="/pole-right.png"
+				alt="pole-right"
+				class="absolute bottom-0 right-0"
+			/>
+		</div>
+		<div class="absolute bottom-0 z-10 w-full">
+			<div
+				class="absolute bottom-0 left-1/2 h-[82px] w-[calc(100vw-232px)] -translate-x-1/2 transform bg-[#1169A8]"
+			>
+				<div class="absolute bottom-1 left-1/2 -translate-x-1/2 text-base-300">
+					Made by <span class="underline">WeVis</span>
+				</div>
+			</div>
+			<img
+				src="/pole-left.png"
+				alt="pole-left"
+				class="absolute bottom-0 left-0"
+			/>
+			<img
+				src="/pole-right.png"
+				alt="pole-right"
+				class="absolute bottom-0 right-0"
+			/>
+		</div>
 	</main>
 </Body>
