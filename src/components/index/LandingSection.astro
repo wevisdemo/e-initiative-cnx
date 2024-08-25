@@ -9,6 +9,7 @@ import { dayElapsed, isCampaignEnded } from '../../utils/campaign';
 import { countSubmittedDocuments } from '../../utils/firebase';
 import { countOfflineSignatures } from '../../utils/sheets';
 import Sharer from '../Sharer.svelte';
+import ArrowDownIcon from '../icons/ArrowDownIcon.svelte';
 
 const documentCount =
 	(await countSubmittedDocuments()) +
@@ -16,13 +17,13 @@ const documentCount =
 ---
 
 <SectionContainer
-	outerClass="h-screen justify-center bg-[#03C038]"
+	outerClass="h-auto justify-center bg-[#03C038] md:h-screen"
 	innerClass="relative flex flex-col gap-10 text-center"
 >
 	<div
-		class="relative flex h-[320px] w-[498px] flex-col items-center justify-center"
+		class="relative flex h-[320px] w-[288px] flex-col items-center justify-center md:w-[498px]"
 	>
-		<img src="/cover.png" alt="cover" class="h-full w-full" />
+		<img src="/cover.png" alt="cover" class="h-[367px] w-[508px]" />
 		<span class="body-01 absolute bottom-0 font-semibold">
 			ร่วมกันปลดล็อคให้เชียงใหม่จัดการตนเองโดยไม่จำเป็นต้องรอรัฐส่วนกลางอีกต่อไป
 		</span>
@@ -35,13 +36,21 @@ const documentCount =
 				class="h-[218px] w-[218px] cursor-pointer"
 			/>
 		</a>
+		<a
+			class="body-02 block flex items-center gap-1 text-info underline md:hidden"
+			href="#intro"
+		>
+			ทำไมต้องลงชื่อ <ArrowDownIcon />
+		</a>
 		<div class="flex flex-col">
 			<p class="heading-responsive-02 text-base-100">
 				ลงแล้ว {documentCount.toLocaleString()} คน
 			</p>
 			<UpdateTimestamp />
 			<p class="body-03-normal">
-				ต้องการ {Config.petition.expectedSignatures.toLocaleString()} รายชื่อ ภายใน
+				ต้องการ {Config.petition.expectedSignatures.toLocaleString()} รายชื่อ <br
+					class="block md:hidden"
+				/> ภายใน
 				{
 					Config.petition.endDate.toLocaleDateString('TH-th', {
 						dateStyle: 'medium',
@@ -49,7 +58,9 @@ const documentCount =
 				}
 			</p>
 		</div>
-		<div class="flex items-center justify-center gap-3 text-accent">
+		<div
+			class="mb-0 mb-[80px] mt-0 flex items-center justify-center gap-3 text-accent md:mt-[35px]"
+		>
 			<span class="body-01 text-neutral">แชร์</span>
 			<Sharer />
 		</div>
@@ -57,13 +68,17 @@ const documentCount =
 </SectionContainer>
 <div class="absolute bottom-0 w-full">
 	<div
-		class="absolute bottom-0 left-1/2 h-[82px] w-[calc(100vw-232px)] -translate-x-1/2 transform bg-[#1169A8]"
+		class="absolute bottom-0 left-1/2 hidden h-[82px] w-[calc(100vw-232px)] -translate-x-1/2 transform bg-[#1169A8] md:block"
 	>
 	</div>
-	<img src="/pole-left.png" alt="pole-left" class="absolute bottom-0 left-0" />
+	<img
+		src="/pole-left.png"
+		alt="pole-left"
+		class="absolute -bottom-[64px] left-0 md:bottom-0"
+	/>
 	<img
 		src="/pole-right.png"
 		alt="pole-right"
-		class="absolute bottom-0 right-0"
+		class="absolute -bottom-[64px] right-0 md:bottom-0"
 	/>
 </div>

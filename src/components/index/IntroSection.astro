@@ -4,11 +4,17 @@ import DocumentIcon from '../icons/DocumentIcon.svelte';
 ---
 
 <SectionContainer
+	id="intro"
 	innerClass="flex max-w-screen-md flex-col items-center gap-3 text-center"
 	outerClass="bg-[#1169A8]"
 >
-	<img src="chiangmai.png" " alt="Chiang Mai" class="h-[140px] w-[358px]" />
-	<div class="flex w-[660px] flex-col">
+	<img
+		src="chiangmai.png"
+		"
+		alt="Chiang Mai"
+		class="mt-8 h-[140px] w-[358px] md:mt-0"
+	/>
+	<div class="flex w-[288px] flex-col md:w-[660px]">
 		<div
 			class="heading-responsive-01 flex w-full items-center justify-center rounded-t-lg bg-secondary py-[14px] font-bold text-neutral"
 		>
@@ -17,6 +23,9 @@ import DocumentIcon from '../icons/DocumentIcon.svelte';
 		<div
 			class="body-02 flex w-full flex-col items-start justify-center bg-white px-[14px] text-neutral"
 		>
+			<div class="body-03 mt-[14px] w-full font-semibold">
+				ร่างพระราชบัญญัติระเบียบบริหาร ราชการเชียงใหม่มหานคร พ.ศ....
+			</div>
 			<div class="mt-[14px] w-full">มีใจความสำคัญคือ</div>
 			<div
 				class="mt-4 flex w-full items-center justify-center rounded-lg bg-[#FFFAE1] py-3"

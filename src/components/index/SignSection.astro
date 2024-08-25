@@ -11,6 +11,7 @@ import SignOptions from './SignOptions.svelte';
 >
 	<div class="flex w-full max-w-sm flex-col gap-4 text-base-100">
 		<img src="register.png" alt="register" />
+		<SignOptions class="block md:hidden" client:visible />
 		<div class="space-y-2 rounded-lg bg-info px-4 py-3">
 			<span class="font-bold">คุณสมบัติของผู้เข้าชื่อเสนอกฎหมาย</span>
 			<ul class="ml-7 list-outside list-disc">
@@ -22,5 +23,5 @@ import SignOptions from './SignOptions.svelte';
 		</div>
 	</div>
 
-	<SignOptions client:visible />
+	<SignOptions class="hidden md:block" client:visible />
 </SectionContainer>
