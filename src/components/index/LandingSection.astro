@@ -10,6 +10,7 @@ import { countSubmittedDocuments } from '../../utils/firebase';
 import { countOfflineSignatures } from '../../utils/sheets';
 import Sharer from '../Sharer.svelte';
 import ArrowDownIcon from '../icons/ArrowDownIcon.svelte';
+import { isCampaignEnded } from '../../utils/campaign';
 
 const documentCount =
 	(await countSubmittedDocuments()) +
@@ -18,30 +19,48 @@ const documentCount =
 
 <SectionContainer
 	outerClass="h-auto justify-center bg-[#03C038] md:h-screen"
-	innerClass="relative flex flex-col gap-10 text-center"
+	innerClass="relative flex flex-col text-center"
 >
 	<div
 		class="relative flex h-[320px] w-[288px] flex-col items-center justify-center md:w-[498px]"
 	>
-		<img src="/cover.png" alt="cover" class="h-[367px] w-[508px]" />
+		<img
+			src="/cover.png"
+			alt="cover"
+			class="hidden h-[367px] w-[508px] md:block"
+		/>
 		<span class="body-01 absolute bottom-0 font-semibold">
 			ร่วมกันปลดล็อคให้เชียงใหม่จัดการตนเองโดยไม่จำเป็นต้องรอรัฐส่วนกลางอีกต่อไป
 		</span>
 	</div>
 	<div class="flex flex-col items-center gap-3">
-		<a href="#sign">
-			<img
-				src="/regist.png"
-				alt="regist"
-				class="h-[218px] w-[218px] cursor-pointer"
-			/>
-		</a>
-		<a
-			class="body-02 block flex items-center gap-1 text-info underline md:hidden"
-			href="#intro"
-		>
-			ทำไมต้องลงชื่อ <ArrowDownIcon />
-		</a>
+		{
+			!isCampaignEnded ? (
+				<a href="#sign">
+					<img
+						src="/regist.png"
+						alt="regist"
+						class="mb-3 mt-6 h-[218px] w-[218px] cursor-pointer"
+					/>
+				</a>
+			) : (
+				<div class="mb-12 mt-6 flex w-full items-center gap-[5px] text-accent md:mb-7 md:mt-10">
+					<div class="h-[2px] grow bg-accent" />
+					<div class="body-03 grow-0 font-semibold">ปิดรับลงชื่อแล้ว</div>
+					<div class="h-[2px] grow bg-accent" />
+				</div>
+			)
+		}
+		{
+			!isCampaignEnded && (
+				<a
+					class="body-02 block flex items-center gap-1 text-info underline md:hidden"
+					href="#intro"
+				>
+					ทำไมต้องลงชื่อ <ArrowDownIcon />
+				</a>
+			)
+		}
 		<div class="flex flex-col">
 			<p class="heading-responsive-02 text-base-100">
 				ลงแล้ว {documentCount.toLocaleString()} คน
