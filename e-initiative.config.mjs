@@ -1,9 +1,9 @@
 /** @type {import('./src/models/config').EInitiativeConfig} */
 export default {
 	metadata: {
-		title: 'E-Initiative Template',
-		description: 'Customizable template for Thailand E-initiative',
-		siteUrl: 'https://wevisdemo.github.io/e-initiative-template',
+		title: 'ร่วมกันผลักดัน พ.ร.บ. เชียงใหม่มหานคร',
+		description: 'ต้องการ 50,000 ชื่อ เสนอคำถามประชามติ สู่รัฐธรรมนูญใหม่',
+		siteUrl: 'https://cmlocalselfgov.com',
 		previewImageUrl: 'https://wevisdemo.github.io/e-initiative-template/og.png',
 	},
 	petition: {
