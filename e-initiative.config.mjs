@@ -4,7 +4,7 @@ export default {
 		title: 'ร่วมกันผลักดัน พ.ร.บ. เชียงใหม่มหานคร',
 		description: 'ต้องการ 50,000 ชื่อ เสนอคำถามประชามติ สู่รัฐธรรมนูญใหม่',
 		siteUrl: 'https://cmlocalselfgov.com',
-		previewImageUrl: 'https://wevisdemo.github.io/e-initiative-template/og.png',
+		previewImageUrl: 'https://cmlocalselfgov.com/og.png',
 	},
 	petition: {
 		endDate: new Date('2024-10-10 GMT+7'),
