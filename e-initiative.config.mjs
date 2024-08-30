@@ -2,7 +2,7 @@
 export default {
 	metadata: {
 		title: 'ร่วมกันผลักดัน พ.ร.บ. เชียงใหม่มหานคร',
-		description: 'ต้องการ 50,000 ชื่อ เสนอคำถามประชามติ สู่รัฐธรรมนูญใหม่',
+		description: 'ต้องการ 10,000 รายชื่อ เสนอกฎหมาย พ.ร.บ.เชียงใหม่มหานคร',
 		siteUrl: 'https://cmlocalselfgov.com',
 		previewImageUrl: 'https://cmlocalselfgov.com/og.png',
 	},
