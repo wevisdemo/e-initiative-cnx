@@ -85,7 +85,9 @@
 		<input
 			type="string"
 			name="location"
-			class="input rounded-sm bg-base-200 {messages ? 'input-error' : ''}"
+			class="input rounded-sm bg-base-200 text-neutral {messages
+				? 'input-error'
+				: ''}"
 			disabled={isLoading}
 		/>
 		<div class="label">
@@ -101,7 +103,9 @@
 		<input
 			type="string"
 			name="citizenId"
-			class="input rounded-sm bg-base-200 {messages ? 'input-error' : ''}"
+			class="input rounded-sm bg-base-200 text-neutral {messages
+				? 'input-error'
+				: ''}"
 			disabled={isLoading}
 		/>
 		<div class="label">
@@ -116,7 +120,7 @@
 				<span class="body-03 label-text font-bold">คำนำหน้า</span>
 			</label>
 			<select
-				class="select max-w-xs rounded-sm bg-base-200"
+				class="select max-w-xs rounded-sm bg-base-200 text-neutral"
 				disabled={isLoading}
 				name="prefix"
 			>
@@ -134,7 +138,7 @@
 				<input
 					type="text"
 					name="firstname"
-					class="input w-full rounded-sm bg-base-200 {messages
+					class="input w-full rounded-sm bg-base-200 text-neutral {messages
 						? 'input-error'
 						: ''}"
 					disabled={isLoading}
@@ -154,7 +158,9 @@
 		<input
 			type="text"
 			name="lastname"
-			class="input rounded-sm bg-base-200 {messages ? 'input-error' : ''}"
+			class="input rounded-sm bg-base-200 text-neutral {messages
+				? 'input-error'
+				: ''}"
 			disabled={isLoading}
 		/>
 		<div class="label">
