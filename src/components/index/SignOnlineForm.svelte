@@ -189,7 +189,7 @@
 				{#if signatureEnabled}
 					<button
 						type="button"
-						class="btn btn-accent btn-outline absolute bottom-4 right-[10px] z-20"
+						class="btn btn-neutral btn-outline absolute bottom-4 right-[10px] z-20"
 						on:click={clearPad}
 					>
 						ล้าง <ResetIcon />
