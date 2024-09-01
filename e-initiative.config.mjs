@@ -2,13 +2,13 @@
 export default {
 	metadata: {
 		title: 'ร่วมกันผลักดัน พ.ร.บ. เชียงใหม่มหานคร',
-		description: 'ต้องการ 10,000 รายชื่อ เสนอกฎหมาย พ.ร.บ.เชียงใหม่มหานคร',
+		description: 'ต้องการ 50,000 รายชื่อ เสนอกฎหมาย พ.ร.บ.เชียงใหม่มหานคร',
 		siteUrl: 'https://cmlocalselfgov.com',
 		previewImageUrl: 'https://cmlocalselfgov.com/og.png',
 	},
 	petition: {
 		endDate: new Date('2024-10-10 GMT+7'),
-		expectedSignatures: 10000,
+		expectedSignatures: 50000,
 		offline: {
 			formUrl: 'petition-form.pdf',
 			formExampleImageUrl: 'https://placehold.co/280x397?text=example',
