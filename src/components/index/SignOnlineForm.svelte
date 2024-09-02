@@ -240,7 +240,10 @@
 	</button>
 </form>
 
-<dialog bind:this={successDialog} class="modal modal-bottom sm:modal-middle">
+<dialog
+	bind:this={successDialog}
+	class="modal modal-bottom text-neutral sm:modal-middle"
+>
 	<form method="dialog" class="modal-box flex flex-col">
 		<div class="flex flex-row items-center justify-center gap-1">
 			<span class="text-success"><CheckmarkIcon /></span>
@@ -252,7 +255,10 @@
 	</form>
 </dialog>
 
-<dialog bind:this={errorDialog} class="modal modal-bottom sm:modal-middle">
+<dialog
+	bind:this={errorDialog}
+	class="modal modal-bottom text-neutral sm:modal-middle"
+>
 	<form method="dialog" class="modal-box flex flex-col">
 		<p class="text-center">
 			เกิดข้อผิดพลาดในการลงชื่อ โปรดลองลงชื่อใหม่อีกครั้ง
