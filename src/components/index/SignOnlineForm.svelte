@@ -91,7 +91,7 @@
 			disabled={isLoading}
 		/>
 		<div class="label">
-			<span class="body-01 {messages ? 'text-error' : ''}"
+			<span class="body-01 text-neutral {messages ? 'text-error' : ''}"
 				>ระบุสถานที่กรอกข้อมูลเช่น จังหวัด (ไม่เกิน {MAX_LOCATION_LENGTH} ตัวอักษร)</span
 			>
 		</div>
@@ -109,7 +109,7 @@
 			disabled={isLoading}
 		/>
 		<div class="label">
-			<span class="body-01 {messages ? 'text-error' : ''}"
+			<span class="body-01 text-neutral {messages ? 'text-error' : ''}"
 				>ใส่เลขประจำตัวประชาชนที่ถูกต้อง 13 หลักไม่ต้องเว้นวรรค</span
 			>
 		</div>
@@ -144,7 +144,7 @@
 					disabled={isLoading}
 				/>
 				<div class="label">
-					<span class="body-01 {messages ? 'text-error' : ''}"
+					<span class="body-01 text-neutral {messages ? 'text-error' : ''}"
 						>ระบุชื่อจริงเป็นภาษาไทย</span
 					>
 				</div>
@@ -164,7 +164,7 @@
 			disabled={isLoading}
 		/>
 		<div class="label">
-			<span class="body-01 {messages ? 'text-error' : ''}"
+			<span class="body-01 text-neutral {messages ? 'text-error' : ''}"
 				>ระบุนามสกุลเป็นภาษาไทย</span
 			>
 		</div>
