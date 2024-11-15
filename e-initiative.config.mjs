@@ -8,7 +8,7 @@ export default {
 	},
 	petition: {
 		endDate: new Date('2024-12-31 GMT+7'),
-		expectedSignatures: 50000,
+		expectedSignatures: 1000,
 		offline: {
 			formUrl: 'petition-form.pdf',
 			formExampleImageUrl: 'https://placehold.co/280x397?text=example',
