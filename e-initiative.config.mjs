@@ -7,7 +7,7 @@ export default {
 		previewImageUrl: 'https://cmlocalselfgov.com/og.png',
 	},
 	petition: {
-		endDate: new Date('2024-12-31 GMT+7'),
+		endDate: new Date('2025-04-30 GMT+7'),
 		expectedSignatures: 10000,
 		offline: {
 			formUrl: 'petition-form.pdf',
