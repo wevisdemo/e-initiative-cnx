@@ -2,15 +2,11 @@
 import Config from '../../../e-initiative.config.mjs';
 import SectionContainer from '../SectionContainer.astro';
 import UpdateTimestamp from '../UpdateTimestamp.svelte';
-import PenIcon from '../icons/PenIcon.svelte';
-import LocationIcon from '../icons/LocationIcon.svelte';
-import TableIcon from '../icons/TableIcon.svelte';
-import { dayElapsed, isCampaignEnded } from '../../utils/campaign';
+import { isCampaignEnded } from '../../utils/campaign';
 import { countSubmittedDocuments } from '../../utils/firebase';
 import { countOfflineSignatures } from '../../utils/sheets';
 import Sharer from '../Sharer.svelte';
 import ArrowDownIcon from '../icons/ArrowDownIcon.svelte';
-import { isCampaignEnded } from '../../utils/campaign';
 
 const documentCount =
 	(await countSubmittedDocuments()) +
@@ -65,7 +61,7 @@ const documentCount =
 			<p class="heading-responsive-02 text-base-100">
 				ลงแล้ว {documentCount.toLocaleString()} คน
 			</p>
-			<UpdateTimestamp />
+			<UpdateTimestamp client:load date={new Date()} />
 			<p class="body-03-normal">
 				ต้องการ {Config.petition.expectedSignatures.toLocaleString()} รายชื่อ <br
 					class="block md:hidden"
