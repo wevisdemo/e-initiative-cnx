@@ -63,13 +63,16 @@ const documentCount =
 			</p>
 			<UpdateTimestamp client:load date={new Date()} />
 			<p class="body-03-normal">
-				ต้องการ {Config.petition.expectedSignatures.toLocaleString()} รายชื่อ <br
-					class="block md:hidden"
-				/> ภายใน
+				ต้องการ {Config.petition.expectedSignatures.toLocaleString()} รายชื่อ
 				{
-					Config.petition.endDate.toLocaleDateString('TH-th', {
-						dateStyle: 'medium',
-					})
+					Config.petition.endDate && (
+						<>
+							<br class="block md:hidden" /> ภายใน
+							{Config.petition.endDate.toLocaleDateString('TH-th', {
+								dateStyle: 'medium',
+							})}
+						</>
+					)
 				}
 			</p>
 		</div>
